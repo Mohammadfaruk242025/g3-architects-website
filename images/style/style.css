@@ -157,27 +157,105 @@ main >section{
 
 #Quick-list{
     font-weight: 500;
+
 }
+#architect-girl-section-title{
+    border-left: 5px solid orange;
+    padding: 20px;
+}
+
+/* feature wii you start  */
+.featured-card-title{
+    padding: 0;
+}
+.architect-girl-section{
+    gap: 130px;
+}
+.featured-card{padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    border-radius: 8px;
+    padding: 30px;
+}
+.featured-card-title .featured-card{
+    font-weight: 600px;
+    font-size: 1.25rem;
+    
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#experience-badge{
+    margin-top: -100px;
+    margin-left: -100px;
+    padding: 42px 42px;
+    
+}
+/* our sponsors  */
+.sponsors-section{
+    text-align: center;
+    
+}
+.our-sopnsors{
+    max-width: 540px;
+    margin: 50px auto;
+
+}
+.our-sponsors-info{
+    font-size: 3.20rem;
+    font-weight: 700;
+}
+.sponsors-image{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   filter: grayscale(100%);
+}
+.sponsors-discription{
+    
+}
+
 /* responsive media query  */
 
 @media screen and (max-width: 576px){
-    .navbar,
-    .nav-links, 
-    .team{
+   .navber, 
+    .nav-link,  
+    .team,{
         flex-direction:column;
        
     }
-    .team-img-container{
-        grid-template-columns: repeat(1 , 1fr);
+    .team-img-container, .fact-container, .sponsors-image{
+        grid-template-columns: 1fr
     }
-    .our-features{
+    .our-features,{
         margin-left:20px ;
+    }
+
+    .fact-container, .sponsors-image{
+        justify-items: center;
+        gap: 20px;
+    }
+    .sponsors-image{
+        gap: 20px;
+        margin-top: 10px;
     }
     }
 
+
+
     /* medium size device  */
-    @media screen and (min-width:576px) and (max-width:992px){.teams{flex-direction: column;
-    margin: 20px auto;}
+    @media screen and (min-width:576px) and (max-width:992px){
+        
+.teams{
+    flex-direction: column;
+   
+
+.our-features{ 
+    margin: 50px auto;
+}
+    .sponsors-image{
+        grid-template-columns: repeat(3,1fr);
+    }
         
     }
 
